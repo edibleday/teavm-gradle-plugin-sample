@@ -2,12 +2,12 @@ group 'com.edibleday'
 
 buildscript {
     repositories {
-        mavenLocal() //Local artifacts placed here
+        maven { url "https://jitpack.io" }
         mavenCentral() //Build dependencies located here
     }
 
     dependencies {
-        classpath "com.edibleday:teavm-gradle-plugin:0.4.3.+" //Depend on plugin
+        classpath 'com.edibleday:teavm-gradle-plugin:0.4.3.2' //Depend on plugin
     }
 }
 
